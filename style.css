@@ -61,6 +61,8 @@ body{
     justify-content: space-around;
     align-items: center;
     color: white;
+    margin-top: -150px;
+    margin-bottom: -150px;
 }
 .img-perfil img{
     height: 400px;
