@@ -1,87 +1,100 @@
 @charset "UTF-8";
 
-body{
-    background-color: rgb(58, 74, 90);
+*{
     margin: 0;
     padding: 0;
 }
 
-/* Menu */
+/*--------------------------------- Novo----------------------------------- */
 
-.menu{
-    background-color: black;
-    padding: 1rem;
-}
-
-.menu ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-}
-
-.menu ul li{
-    display: inline;
-}
-
-.menu ul li p{
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    display: block;
-}
-
-.menu ul li p:hover{
-    background-color: rgb(58, 74, 90);
-    border-radius: 5px;
-}
-
-/* escondido menu */
-
-.menu ul li p > a{
-    display: none;
-}
-.menu ul li p:hover > a{
-    display: block;
-    font-size: 1em;
-    color: white;
-    color: ;
-    margin-top: 1em;
-}
-
-/* Foto-Perfil */
-
-.img-perfil{
-    margin: 0;
-    padding: 0;
+.cabeca{
     width: 100%;
-    height: 100vh;
+    height: 90px;
+    background-color: #000;
     display: flex;
-    justify-content: space-around;
+    /* justify-content: center; */
     align-items: center;
-    color: white;
-    margin-top: -150px;
-    margin-bottom: -150px;
+    overflow: hidden;
+    padding: 7px;
 }
-.img-perfil img{
-    height: 400px;
-    width: 400px;
-    border-radius: 30%;
-    border: 5px solid black;
+.cabeca-logo img{
+    width: 40px;
+    margin-left: 80%;
 }
-
-.rodape{
-    background-color: aliceblue;
-    margin: 0;
-    padding: 0;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
+.cabeca-info{
+    color: #fff;
+    margin: 0 0 10px 35%;
+    width: 30%;
+    text-align: center;
+    font-size: 22px;
 }
-
-.rodape table tr th img{
-    height: 25px;
-    margin-top: 10px;
+.cabeca-info p{
+    border-top: 1px solid #fff;
+    margin-top: 0px;
+    padding-top: 5px;
+    font-weight: bold;
 }
 
+@media (max-width: 767.9px){
+
+    .cabeca{
+        width: 100%;
+        padding: 0px;
+        height: 50px;
+        align-items: center;
+    }
+    .cabeca-info{
+        width: 100%;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        margin: 0px;
+    }
+    .cabeca-info p{
+        border-top: none;
+        border-left: 1px solid #fff;
+        font-size: 15px;
+        margin-left: 12px;
+        /* height: 45px; */
+        padding-left: 10px;
+    }
+    .cabeca-logo{
+        display: none;
+    }
+
+/*---------- PERFIL---------------------------------------------- */
+    .perfil{
+        height: 200px;
+        margin: 20px;
+        border-radius: 6px;
+        padding: 5px;
+        overflow: hidden;
+        float: left;
+        display: flex;
+        align-items: center;
+        border: 1px solid #000;
+    }
+    .perfil-img img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        padding-right: 5px;
+    }
+    .perfil-info{        
+        justify-items: center;
+    }
+    .perfil-info h1{
+        font-size: 1.3em;
+        color: #000;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    .perfil-info p{
+        font-size: 1em;
+        color: #000;
+        font-weight: 100;
+    }
+}
