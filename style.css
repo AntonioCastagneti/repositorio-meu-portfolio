@@ -80,7 +80,7 @@
 /* CONHECIMENTO------------------------------------------------------------------------- */
 
 
-@media (max-width: 767.9px){
+@media (min-device-width: 767.9px){
 
     .cabeca{
         width: 100%;
@@ -167,6 +167,10 @@
         padding: 0;
         border: none;
         gap: 10px;
+    }
+    .conhecimento-icone{
+        height: 100px;
+        width: 100px;
     }
 }
 
