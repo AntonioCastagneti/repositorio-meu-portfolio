@@ -34,6 +34,51 @@
     padding-top: 5px;
     font-weight: bold;
 }
+.box{
+    border: 2px solid #000;
+    border-radius: 6px;
+    margin: 30px 30% 30px 30%;
+    padding: 10px 30px;
+    text-align: center;
+    /* justify-content: center;
+    display: flex;
+    flex-direction: column;
+    
+    overflow: hidden; */
+}
+.conhecimento{
+    overflow: hidden;
+    justify-content: center;
+    display:flex ;
+    /* flex-direction: column; */
+    align-items: center;
+    /* text-align: center; */
+    /* flex-direction: column; */
+    gap: 10px;
+}
+.conhecimento-lista{
+    display: flex;
+    border: 1px solid #000;
+    padding: 15px;
+    width: min-content;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
+    border-radius: 6px;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+.conhecimento-icone img{
+    height: 40px;
+    width: 40px;
+    color: #000;
+}
+.conhecimento-nivel{
+    font-size: 20px;
+}
+
+/* CONHECIMENTO------------------------------------------------------------------------- */
+
 
 @media (max-width: 767.9px){
 
@@ -97,4 +142,82 @@
         color: #000;
         font-weight: 100;
     }
+
+    /* PERFIL--------------------------------------------------- */
+    .box{
+        /* background-color: aqua; */
+        border: 1px solid #000;
+        margin: 30px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        height: min-content;
+    }
+    .conhecimento-h1 h1{
+        margin-bottom: 10px;
+        font-size: 1.3em;
+        /* border-bottom: 1px solid #000; */
+    }
+    .conhecimento{
+        display: flex;
+        flex-direction: column;
+    }
+    .conhecimento-lista{
+        /* margin: 10px 0; */
+        padding: 0;
+        border: none;
+        gap: 10px;
+    }
+}
+
+@media (min-width: 768px){
+    /*---- PERFIL---------------------------------------------------- */
+    .perfil{
+    height: 500px;
+    margin: 30px 30px 30px 30px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    border: 2px solid #000;
+    border-radius: 6px;
+}
+.perfil-img{
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+    margin-right: 100px;
+    border-radius: 50%;
+}
+.perfil-img img{
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid #000; */
+    transition: all .7s ease;
+}
+/* .perfil-img:hover{
+    transform: scale(1.2);
+    overflow: hidden;
+} */
+ .perfil-info{
+    width: 300px;
+    height: 190px;
+    padding: 20px;
+    border: 1px solid #000;
+    border-radius: 6px;
+    justify-items: center;
+    overflow: hidden;
+    align-content: center;
+ }
+
+ .perfil-info h1{
+    margin-bottom: 20px;
+ }
+
+
+
+
+
+
 }
