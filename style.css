@@ -80,7 +80,7 @@
 /* CONHECIMENTO------------------------------------------------------------------------- */
 
 
-@media (min-device-width: 767.9px){
+@media (max-width: 767.9px){
 
     .cabeca{
         width: 100%;
@@ -172,6 +172,57 @@
         height: 100px;
         width: 100px;
     }
+
+    .footer{
+        height: min-content;
+        width: 100%;
+        overflow: hidden;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* text-align: center; */
+        padding: 15px 8px 10px 8px;
+        gap: 15px;
+    }
+    .footer-1{
+        /* text-align: justify; */
+        width: 35%;
+        text-align: center;
+    }
+    .footer-1 p{
+        font-size: 14px;
+        color: #fff;
+    }
+    .footer-2{
+        text-align: center;
+        
+    }
+    .footer-2 h1{
+        font-size: 14px;
+        color: #fff;
+        font-weight: normal;
+    }
+    .footer-2 a{
+        display: flex;
+        align-items: center;
+        color: #fff;
+        text-decoration: none;
+
+    }
+    .footer-2 img{
+        height: 35px;
+        width: 35px;
+        background-color: #fff;
+        border-radius: 10px;
+        margin-right: 4px;
+        margin-top: 4px;
+    }
+     .footer .footer-1 .link-icone{
+         font-size: 10px;
+         margin-top: 5px;
+     }
+
 }
 
 @media (min-width: 768px){
@@ -219,7 +270,46 @@
     margin-bottom: 20px;
  }
 
+ .footer{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+    background-color: #000;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 80px;
+ }
+ .footer-1{
+    color: #fff;
+    font-size: 2em;
+    text-align: center;
+    font-weight: normal;
+ }
+ .footer-2{
+    display: flex;
+    /* flex-direction: column; */
+    gap: 15px;    
+ }
+ .footer-2 a{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    text-decoration: none;
+    font-size: 2em;
+ }
+ .footer-2 img{
+    height: 120px;
+    background-color: #fff;
+    border-radius: 20px;
+ }
 
+ .footer .footer-1 .link-icone{
+    font-size: 14px;
+    margin-top: 60px;
+ }
 
 
 
